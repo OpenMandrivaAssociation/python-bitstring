@@ -1,13 +1,13 @@
 %define module bitstring
 
 Name:		python-bitstring
-Version:	4.3.1
+Version:	4.4.0
 Release:	1
 Summary:	A Python module to help you manage your bits
 License:	MIT
 Group:		Development/Python
 URL:		https://github.com/scott-griffiths/bitstring
-Source0:	https://github.com/scott-griffiths/%{module}/archive/%{module}-%{version}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:	%{URL}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildSystem:	python
 BuildArch:	noarch
 BuildRequires:	python%{pyver}dist(pip)
