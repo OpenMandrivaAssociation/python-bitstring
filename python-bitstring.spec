@@ -2,7 +2,7 @@
 
 Name:		python-bitstring
 Version:	4.4.0
-Release:	1
+Release:	2
 Summary:	A Python module to help you manage your bits
 License:	MIT
 Group:		Development/Python
