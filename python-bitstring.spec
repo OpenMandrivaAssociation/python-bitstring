@@ -14,6 +14,11 @@ BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
 
+%prep -a
+# 4.4.0 pins tibs < 0.6 for an optional Rust core that stays off unless
+# BITSTRING_USE_RUST_CORE is set. Cooker has tibs 0.9, so do not require it.
+sed -i '/"tibs >= 0.5.6/d' pyproject.toml
+
 %description
 %{module} is a Python library to help make the creation and analysis of all
 types of bit-level binary data as simple and efficient as possible.
